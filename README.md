@@ -1,6 +1,6 @@
 # 🍌 Nano Banana MCP Server
 
-A custom MCP server for image generation via the Gemini API (Nano Banana 2), built for local integration with Opencode/Antigravity.
+A custom MCP server for image generation via the Gemini API (Nano Banana 2), built for local integration with Claude Code.
 
 ## Features
 
@@ -24,21 +24,21 @@ A custom MCP server for image generation via the Gemini API (Nano Banana 2), bui
 ## Setup
 
 ```bash
-cd ~/.gemini/antigravity/mcp-servers/nanobanana-mcp-server
+cd claude-nanobanana-mcp
 npm install
 npm run build
 ```
 
 ## MCP Configuration
 
-Add to your MCP config (e.g., `.opencode/mcp.json` or VS Code settings):
+Add to your MCP config (e.g., `.claude/mcp.json`):
 
 ```json
 {
   "mcpServers": {
     "nanobanana": {
       "command": "node",
-      "args": ["/Users/recarnot/.gemini/antigravity/mcp-servers/nanobanana-mcp-server/dist/index.js"],
+      "args": ["./dist/index.js"],
       "env": {
         "GEMINI_API_KEY": "${GEMINI_API_KEY}"
       }
