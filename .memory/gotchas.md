@@ -1,6 +1,6 @@
 # Gotchas — Nano Banana MCP Server
 
-> Dernière mise à jour : 2026-03-01
+> Dernière mise à jour : 2026-03-01 (session 2)
 
 ## Points d'attention
 
@@ -25,6 +25,9 @@ Les deux modèles (`gemini-3.1-flash-image-preview` et `gemini-3-pro-image-previ
 ### 7. Safety filters silencieux
 L'API Gemini peut bloquer des requêtes via des safety filters. Le service détecte les réponses sans image et inclut le message texte du modèle si disponible, mais le refus peut sembler cryptique côté client.
 
+### 8. Timeout sur `nanobanana_icon` multi-tailles
+Avec beaucoup de tailles demandées (ex: 6 tailles), la génération séquentielle peut dépasser le timeout MCP par défaut. Il faut configurer `MCP_TOOL_TIMEOUT` à `120000` (120s) dans la config client pour éviter les timeouts.
+
 ## Aucun bug connu
 
-Aucun bug identifié lors de cette session.
+Aucun bug identifié lors des sessions.

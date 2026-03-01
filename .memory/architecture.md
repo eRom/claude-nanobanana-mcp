@@ -1,6 +1,6 @@
 # Architecture — Nano Banana MCP Server
 
-> Dernière mise à jour : 2026-03-01
+> Dernière mise à jour : 2026-03-01 (session 2)
 
 ## Vue d'ensemble
 
@@ -33,6 +33,9 @@ src/
     ├── edit.ts           # Tool: nanobanana_edit (image editing)
     ├── icon.ts           # Tool: nanobanana_icon (multi-size icon generation)
     └── diagram.ts        # Tool: nanobanana_diagram (technical diagrams)
+skills/
+└── nanobanana/
+    └── SKILL.md          # Skill — guide complet d'utilisation des tools
 ```
 
 ## Architecture en couches
@@ -86,3 +89,7 @@ src/
 
 - **GEMINI_API_KEY** (ou GOOGLE_API_KEY) : variable d'environnement obligatoire
 - **Filesystem** : écriture directe sur disque (PNG), création automatique des répertoires
+
+## Skill
+
+Le dossier `skills/nanobanana/SKILL.md` contient une skill pour l'agent Antigravity. Elle documente les 4 tools MCP avec leurs paramètres, valeurs par défaut, ratios, résolutions, styles, et exemples concrets. L'agent la charge automatiquement pour guider l'utilisation des tools sans avoir besoin de lire le code source.

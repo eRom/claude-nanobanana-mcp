@@ -1,6 +1,6 @@
 # Fichiers clés — Nano Banana MCP Server
 
-> Dernière mise à jour : 2026-03-01
+> Dernière mise à jour : 2026-03-01 (session 2)
 
 ## Core
 
@@ -32,3 +32,9 @@
 | `tsconfig.json` | TypeScript strict, ES2022, Node16 modules, sourcemaps + declarations |
 | `.gitignore` | Ignore standard Node.js (node_modules, dist, .env, logs) |
 | `README.md` | Documentation utilisateur : features, setup, config MCP, exemples d'utilisation |
+
+## Skill
+
+| Fichier | Rôle |
+|---------|------|
+| `skills/nanobanana/SKILL.md` | Skill — guide complet d'utilisation des 4 tools avec paramètres, défauts, styles, exemples (222 lignes) |

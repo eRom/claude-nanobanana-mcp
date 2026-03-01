@@ -1,6 +1,6 @@
 # Patterns — Nano Banana MCP Server
 
-> Dernière mise à jour : 2026-03-01
+> Dernière mise à jour : 2026-03-01 (session 2)
 
 ## Conventions de nommage
 
@@ -17,6 +17,7 @@
 - **Singleton client** : `getClient()` dans `gemini.ts` avec lazy init et variable module-level `_client`
 - **Service layer** : séparation stricte entre la logique MCP (tools/) et l'API (services/)
 - **Prompt engineering** : les tools `icon` et `diagram` enrichissent le prompt utilisateur avec des guidelines par type/style/complexité via des dictionnaires `Record<string, string>`
+- **Skill pattern** : fichier `SKILL.md` avec frontmatter YAML (`name`, `description`, `user-invocable`) + documentation Markdown structurée par tool, placé dans `skills/{nom}/SKILL.md`
 
 ## Patterns de code récurrents
 
